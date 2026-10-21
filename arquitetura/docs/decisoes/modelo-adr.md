@@ -1,5 +1,20 @@
 # Modelo de ADR
 
+## Ciclo de vida
+
+```mermaid
+stateDiagram-v2
+    [*] --> Proposto : PR aberto
+    Proposto --> Aceito : aprovado no fórum
+    Proposto --> Rejeitado : não aprovado
+    Aceito --> Substituido : novo ADR o substitui
+    Rejeitado --> [*]
+    Substituido --> [*]
+    Substituido : Substituído por ADR-XXXX
+```
+
+## Modelo
+
 ```markdown
 # ADR NNNN: Título curto da decisão
 
