@@ -4,6 +4,7 @@ repo_url: https://github.com/edtroleis/techdocs-wikis
 edit_uri: edit/main/arquitetura/docs/
 nav:
   - Início: index.md
+  - Visão executiva: visao-executiva.md
   - Visão geral:
       - Princípios: visao-geral/principios.md
       - Camadas e integrações: visao-geral/camadas-integracoes.md
