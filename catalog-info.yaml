@@ -13,7 +13,7 @@ metadata:
 spec:
   type: wiki
   lifecycle: production
-  owner: platform-team
+  owner: arquitetura
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -30,7 +30,7 @@ metadata:
 spec:
   type: wiki
   lifecycle: production
-  owner: platform-team
+  owner: governanca-compliance
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -47,7 +47,7 @@ metadata:
 spec:
   type: wiki
   lifecycle: production
-  owner: platform-team
+  owner: governanca-compliance
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -64,4 +64,4 @@ metadata:
 spec:
   type: wiki
   lifecycle: production
-  owner: platform-team
+  owner: dados-ia
