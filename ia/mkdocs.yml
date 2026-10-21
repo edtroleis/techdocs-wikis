@@ -1,0 +1,28 @@
+site_name: Wiki de Inteligência Artificial
+site_description: Tudo o que você precisa saber sobre Inteligência Artificial
+repo_url: https://github.com/edtroleis/techdocs-wikis
+edit_uri: edit/main/ia/docs/
+nav:
+  - Início: index.md
+  - Fundamentos:
+      - Conceitos: fundamentos/conceitos.md
+      - Casos de uso: fundamentos/casos-de-uso.md
+  - Desenvolvimento:
+      - Padrões de arquitetura: desenvolvimento/padroes.md
+      - Engenharia de prompts: desenvolvimento/prompts.md
+      - Avaliação: desenvolvimento/avaliacao.md
+  - Governança:
+      - Uso responsável: governanca/uso-responsavel.md
+      - Dados e privacidade: governanca/dados.md
+  - Operação:
+      - Monitoramento: operacao/monitoramento.md
+      - Custos: operacao/custos.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

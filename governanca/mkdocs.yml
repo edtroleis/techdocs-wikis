@@ -1,0 +1,23 @@
+site_name: Wiki de Governança
+site_description: Referência para papéis, responsabilidades e gestão de riscos
+repo_url: https://github.com/edtroleis/techdocs-wikis
+edit_uri: edit/main/governanca/docs/
+nav:
+  - Início: index.md
+  - Responsabilidades:
+      - Papéis: responsabilidades/papeis.md
+      - Matriz RACI: responsabilidades/raci.md
+      - Fóruns e rituais: responsabilidades/foruns.md
+  - Riscos:
+      - Gestão de riscos: riscos/gestao-riscos.md
+      - Matriz de riscos: riscos/matriz.md
+      - Exceções: riscos/excecoes.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

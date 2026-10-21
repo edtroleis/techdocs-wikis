@@ -1,0 +1,26 @@
+site_name: Wiki de Arquitetura
+site_description: Tudo o que você precisa saber sobre Arquitetura Técnica
+repo_url: https://github.com/edtroleis/techdocs-wikis
+edit_uri: edit/main/arquitetura/docs/
+nav:
+  - Início: index.md
+  - Visão geral:
+      - Princípios: visao-geral/principios.md
+      - Camadas e integrações: visao-geral/camadas-integracoes.md
+      - Padrões tecnológicos: visao-geral/padroes-tecnologicos.md
+  - Decisões:
+      - Como decidimos: decisoes/como-decidimos.md
+      - Modelo de ADR: decisoes/modelo-adr.md
+      - Registro de decisões: decisoes/registro.md
+  - Operação:
+      - Confiabilidade: operacao/confiabilidade.md
+      - Capacidade e custos: operacao/capacidade-custos.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true

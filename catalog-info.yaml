@@ -1,0 +1,67 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wiki-arquitetura
+  title: Wiki de Arquitetura
+  description: Tudo o que você precisa saber sobre Arquitetura Técnica
+  tags: [wiki, arquitetura]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-wikis
+    backstage.io/techdocs-ref: dir:./arquitetura
+    portal.local/category: Arquitetura
+    portal.local/topics: Visão geral, Decisões, Operação
+spec:
+  type: wiki
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wiki-governanca
+  title: Wiki de Governança
+  description: Referência para papéis, responsabilidades e gestão de riscos
+  tags: [wiki, governanca]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-wikis
+    backstage.io/techdocs-ref: dir:./governanca
+    portal.local/category: Governança
+    portal.local/topics: Responsabilidades, Riscos
+spec:
+  type: wiki
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wiki-compliance
+  title: Wiki de Compliance
+  description: Referência para obrigações, privacidade, controles e evidências
+  tags: [wiki, compliance]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-wikis
+    backstage.io/techdocs-ref: dir:./compliance
+    portal.local/category: Compliance
+    portal.local/topics: Obrigações, Privacidade, Controles, Evidências
+spec:
+  type: wiki
+  lifecycle: production
+  owner: platform-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wiki-ia
+  title: Wiki de Inteligência Artificial
+  description: Tudo o que você precisa saber sobre Inteligência Artificial
+  tags: [wiki, ia]
+  annotations:
+    github.com/project-slug: edtroleis/techdocs-wikis
+    backstage.io/techdocs-ref: dir:./ia
+    portal.local/category: Inteligência Artificial
+    portal.local/topics: Fundamentos, Desenvolvimento, Governança, Operação
+spec:
+  type: wiki
+  lifecycle: production
+  owner: platform-team

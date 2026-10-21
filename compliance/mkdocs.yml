@@ -1,0 +1,21 @@
+site_name: Wiki de Compliance
+site_description: Referência para obrigações, privacidade, controles e evidências
+repo_url: https://github.com/edtroleis/techdocs-wikis
+edit_uri: edit/main/compliance/docs/
+nav:
+  - Início: index.md
+  - Obrigações: obrigacoes/index.md
+  - Privacidade:
+      - LGPD na prática: privacidade/lgpd.md
+      - Classificação de dados: privacidade/classificacao.md
+  - Controles: controles/index.md
+  - Evidências: evidencias/index.md
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+strict: true
